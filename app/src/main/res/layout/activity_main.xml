@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="@dimen/margin"
+        android:textSize="32sp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_view_popular_movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_welcome"
+        android:layout_centerHorizontal="true"
+        android:text="@string/films_populaires"
+        android:textColor="#906787"
+        android:textSize="22sp"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_popular_movies"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_batman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="onClickFilm"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:src="@drawable/batman_begins"
+                android:contentDescription="@string/batman"
+            />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:text="@string/batman"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/sortie_batman"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_starwars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="onClickFilm"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:src="@drawable/star_wars"
+                android:contentDescription="@string/star_wars_4"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:text="@string/star_wars_4"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/sortie_star_wars_4"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_rechercher"
+        android:onClick="onClickSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+       android:text="@string/Rechercher"
+        >
+
+    </Button>
+
+</RelativeLayout>

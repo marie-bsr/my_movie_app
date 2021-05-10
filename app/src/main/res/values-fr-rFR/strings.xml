@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mon app de films</string>
+    <string name="bienvenue_marie">Bienvenue Marie!</string>
+    <string name="films_populaires">Films populaires</string>
+    <string name="batman">Batman begins</string>
+    <string name="sortie_batman">sortie: 2005</string>
+    <string name="star_wars_4">Star Wars: episode IV</string>
+    <string name="sortie_star_wars_4">sortie: 1977</string>
+    <string name="Rechercher">Rechercher</string>
+    <string name="resume">
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+
+
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="categorie_star_wars">Action,Aventure,Fantasy</string>
+    <string name="a_propos">A propos de ce film</string>
+    <string name="lire_la_suite">Lire la suite</string>
+    <string name="director">Director</string>
+    <string name="nom_director">George Lucas</string>
+    <string name="actors">Actors</string>
+    <string name="nom_actors">Mark Hamil, Harrison Ford, Carrie Fisher</string>
+    <string name="awards">Awards</string>
+    <string name="nom_awards">Won 6 oscars</string>
+</resources>
